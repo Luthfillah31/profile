@@ -1,0 +1,14 @@
+[project]
+name = "my-next-app"
+channels = ["conda-forge"]
+platforms = ["linux-64", "osx-arm64", "osx-64", "win-64"]
+
+[dependencies]
+nodejs = ">=20.0.0"
+pnpm = "*"
+
+[tasks]
+install-deps = "pnpm install"
+dev = "pnpm run dev"
+build = "pnpm run build"
+start = "pnpm run start"
