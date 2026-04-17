@@ -1,65 +1,81 @@
-import Image from "next/image";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col flex-1 items-center justify-center bg-zinc-50 font-sans dark:bg-black">
-      <main className="flex flex-1 w-full max-w-3xl flex-col items-center justify-between py-32 px-16 bg-white dark:bg-black sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={100}
-          height={20}
-          priority
-        />
-        <div className="flex flex-col items-center gap-6 text-center sm:items-start sm:text-left">
-          <h1 className="max-w-xs text-3xl font-semibold leading-10 tracking-tight text-black dark:text-zinc-50">
-            To get started, edit the page.tsx file.
-          </h1>
-          <p className="max-w-md text-lg leading-8 text-zinc-600 dark:text-zinc-400">
-            Looking for a starting point or more instructions? Head over to{" "}
-            <a
-              href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Templates
-            </a>{" "}
-            or the{" "}
-            <a
-              href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-              className="font-medium text-zinc-950 dark:text-zinc-50"
-            >
-              Learning
-            </a>{" "}
-            center.
-          </p>
-        </div>
-        <div className="flex flex-col gap-4 text-base font-medium sm:flex-row">
-          <a
-            className="flex h-12 w-full items-center justify-center gap-2 rounded-full bg-foreground px-5 text-background transition-colors hover:bg-[#383838] dark:hover:bg-[#ccc] md:w-[158px]"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+    <div className="min-h-screen">
+      
+      {/* --- BIG, SMOOTH NAVIGATION --- */}
+      <nav className="w-full pt-12 pb-6 px-8 flex justify-center items-center gap-8 md:gap-16 text-lg md:text-2xl font-light tracking-wide">
+        <Link 
+          href="/" 
+          className="relative group py-2"
+        >
+          <span className="text-[#38220f] font-medium">Profile</span>
+          {/* Smooth animated underline */}
+          <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#38220f] scale-x-100 transition-transform duration-300 ease-out"></span>
+        </Link>
+        
+        <Link 
+          href="/portfolio" 
+          className="relative group py-2 text-[#634832] hover:text-[#38220f] transition-colors duration-300"
+        >
+          <span>Portfolio</span>
+          <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#38220f] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left"></span>
+        </Link>
+
+        <Link 
+          href="/contact" 
+          className="relative group py-2 text-[#634832] hover:text-[#38220f] transition-colors duration-300"
+        >
+          <span>Contact</span>
+          <span className="absolute bottom-0 left-0 w-full h-[2px] bg-[#38220f] scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-out origin-left"></span>
+        </Link>
+      </nav>
+
+      {/* --- MAIN PROFILE CONTENT --- */}
+      <main className="max-w-4xl mx-auto mt-24 px-8 flex flex-col items-center text-center animate-fade-in-up">
+        
+        <h1 className="text-5xl md:text-7xl font-medium tracking-tight text-[#38220f] mb-6">
+          Hi, I'm Luthfillah.
+        </h1>
+        
+        <p className="text-xl md:text-2xl text-[#634832] font-light max-w-2xl mb-12 leading-relaxed">
+          A passionate developer building digital experiences. Welcome to my personal slice of the internet.
+        </p>
+
+        {/* --- SOCIAL LINKS --- */}
+        <div className="flex gap-6">
+          {/* GitHub Button */}
+          <a 
+            href="https://github.com/luthfillah31" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex items-center justify-center p-4 border border-[#dbc1ac] rounded-full text-[#634832] hover:text-[#ece0d1] hover:bg-[#967259] hover:border-[#967259] hover:-translate-y-1 transition-all duration-300 shadow-sm hover:shadow-md"
+            aria-label="GitHub"
           >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={16}
-              height={16}
-            />
-            Deploy Now
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.03c3.15-.38 6.5-1.4 6.5-7a4.6 4.6 0 0 0-1.39-3.2 4.6 4.6 0 0 0 .14-3.1s-1.14-.36-3.4 1.18a11.8 11.8 0 0 0-6 0C7.14 1.36 6 1.72 6 1.72a4.6 4.6 0 0 0 .14 3.1 4.6 4.6 0 0 0-1.39 3.2c0 5.6 3.35 6.62 6.5 7A4.8 4.8 0 0 0 10 18v4"></path>
+              <path d="M9 18c-4.51 2-5-2-7-2"></path>
+            </svg>
           </a>
-          <a
-            className="flex h-12 w-full items-center justify-center rounded-full border border-solid border-black/[.08] px-5 transition-colors hover:border-transparent hover:bg-black/[.04] dark:border-white/[.145] dark:hover:bg-[#1a1a1a] md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
+
+          {/* LinkedIn Button */}
+          <a 
+            href="https://linkedin.com/in/yourprofile" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="flex items-center justify-center p-4 border border-[#dbc1ac] rounded-full text-[#634832] hover:text-[#ece0d1] hover:bg-[#967259] hover:border-[#967259] hover:-translate-y-1 transition-all duration-300 shadow-sm hover:shadow-md"
+            aria-label="LinkedIn"
           >
-            Documentation
+            <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
           </a>
         </div>
       </main>
+
     </div>
   );
 }
