@@ -61,7 +61,7 @@ export default function Home() {
 
           {/* LinkedIn Button */}
           <a 
-            href="https://linkedin.com/in/yourprofile" 
+            href="https://linkedin.com/in/luthfillahakhtarfakhrudin" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="flex items-center justify-center p-4 border border-[#dbc1ac] rounded-full text-[#634832] hover:text-[#ece0d1] hover:bg-[#967259] hover:border-[#967259] hover:-translate-y-1 transition-all duration-300 shadow-sm hover:shadow-md"
