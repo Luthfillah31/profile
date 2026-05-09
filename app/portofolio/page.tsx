@@ -8,40 +8,24 @@ import { useState } from "react";
 const projects = [
   {
     id: 1,
-    title: "Jakarta Housing Predictor",
-    description: "An end-to-end machine learning project predicting real estate prices based on location and proximity to transit.",
-    category: "Machine Learning",
-    mediumLink: "#",
-    appLink: "#"
+    title: "Recognizing Indonesian Rupiah with Computer Vision",
+    description: "This computer vision project empowers people who are blind by using AI to accurately identify the value of Indonesian Rupiah banknotes. Powered by a YOLO v11 model, it achieves high precision while seamlessly filtering out foreign currencies and background noise.",
+    category: "Computer Vision",
+    mediumLink: "https://medium.com/@luthfillahatar_68889/recognizing-indonesian-rupiah-with-computer-vision-da2e814672de",
+    appLink: "https://moneydetection.streamlit.app/"
   },
   {
     id: 2,
-    title: "Q3 Sales Performance",
-    description: "Interactive dashboard visualizing regional growth, customer churn, and product category trends.",
-    category: "Power BI",
-    mediumLink: "#",
-    appLink: "#"
-  },
-  {
-    id: 3,
-    title: "Customer Segmentation",
-    description: "Clustered e-commerce customers using K-Means to identify high-value demographics for marketing.",
+    title: "Customer Segmentation & Sales Dashboard",
+    description: "Clustered retail customers with Leveraging RFM Analysis",
     category: "Data Analysis",
-    mediumLink: "#",
-    appLink: "#"
-  },
-  {
-    id: 4,
-    title: "Supply Chain Forecasting",
-    description: "Time-series forecasting model to predict inventory needs for the next 6 months to reduce warehouse costs.",
-    category: "Machine Learning",
-    mediumLink: "#",
-    appLink: "#"
+    mediumLink: "https://drive.google.com/file/d/1G9MPjj6caaWJ3RcAuavX2s3REnCaNfLm/view?usp=drive_link",
+    appLink: "https://online-retail-dashboard-by-luthfillah.streamlit.app/"
   }
 ];
 
 // The filter options
-const categories = ["All", "Power BI", "Machine Learning", "Data Analysis"];
+const categories = ["All", "Power BI", "Machine Learning", "Data Analysis","Computer Vision"];
 
 export default function Portfolio() {
   // This state remembers which filter button is currently clicked

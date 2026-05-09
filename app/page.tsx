@@ -27,10 +27,10 @@ export default function Home() {
         <section className="flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-5xl md:text-7xl font-medium tracking-tight text-[#38220f] mb-6">
-              Hi, I'm Luthfillah.
+              Hi, I'm Luthfi.
             </h1>
             <p className="text-xl md:text-2xl text-[#634832] font-light max-w-xl mb-10 leading-relaxed">
-              I transform complex data into clear insights and build digital experiences that matter.
+              I transform complex data into actionable insights and engineer intelligent systems that solve real-world problems.
             </p>
 
             {/* Social Links */}
@@ -58,10 +58,10 @@ export default function Home() {
             <h2 className="text-3xl font-semibold text-[#38220f] mb-6">My Story</h2>
             <div className="space-y-4 text-[#634832] leading-relaxed">
               <p>
-                I am a developer and data enthusiast with a passion for storytelling through numbers and code. I specialize in building end-to-end solutions—from cleaning messy datasets to deploying interactive web applications.
+                I am a Data Science graduate and a dedicated Data and AI enthusiast with a deep love for solving complex problems. I thrive on turning raw, unstructured data into intelligent, scalable solutions.
               </p>
               <p>
-                My approach bridges the gap between raw technical analysis and user-friendly design. Whether I am building a dashboard in Power BI, training a model in Python, or designing a frontend in Next.js, my goal is always to make information accessible and actionable.
+                My experience spans across the entire data pipeline. From building analytics and automation tools to researching Large Language Models and computer vision systems, I specialize in engineering end-to-end systems that deliver real-world impact.
               </p>
               <p>
                 When I'm not writing code or analyzing trends, you can usually find me brewing the perfect cup of coffee or exploring new tech stacks.
@@ -76,7 +76,7 @@ export default function Home() {
               {/* You can easily add or remove skills from this list! */}
               {[
                 "Python", "SQL", "Next.js", "React", "TypeScript", 
-                "Power BI", "Machine Learning", "Streamlit", 
+                "Power BI", "Machine Learning", "Streamlit","Langchain", 
                 "Pandas", "Scikit-Learn", "Tailwind CSS", "Git"
               ].map((skill) => (
                 <span 
