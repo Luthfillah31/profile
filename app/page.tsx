@@ -1,5 +1,5 @@
 import Link from "next/link";
-
+import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen pb-20">
@@ -45,8 +45,14 @@ export default function Home() {
           </div>
 
           {/* Abstract Shape / Placeholder for your actual photo */}
-          <div className="w-64 h-64 md:w-80 md:h-80 shrink-0 bg-gradient-to-tr from-[#dbc1ac]/40 to-transparent rounded-full border border-[#dbc1ac] flex items-center justify-center text-[#967259] shadow-inner">
-            <span className="opacity-50 text-sm tracking-widest">[YOUR PHOTO HERE]</span>
+          <div className="w-64 h-64 md:w-80 md:h-80 shrink-0 relative rounded-full overflow-hidden border border-[#dbc1ac] shadow-inner">
+            <Image 
+              src="/pic_1.jpg" 
+              alt="Luthfillah Akhtar" 
+              fill
+              className="object-cover"
+              priority 
+            />
           </div>
         </section>
 
