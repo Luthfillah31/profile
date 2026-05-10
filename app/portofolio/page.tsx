@@ -21,6 +21,14 @@ const projects = [
     category: "Data Analysis",
     mediumLink: "https://drive.google.com/file/d/1G9MPjj6caaWJ3RcAuavX2s3REnCaNfLm/view?usp=drive_link",
     appLink: "https://online-retail-dashboard-by-luthfillah.streamlit.app/"
+  },
+  {
+    id: 3,
+    title: "Coffe Shop Sales Dashboard",
+    description: "A Power BI dashboard tracking daily sales, popular menu items, and revenue trends for a retail coffee business",
+    category: "Power BI",
+    mediumLink: "",
+    appLink: "https://app.powerbi.com/view?r=eyJrIjoiZmVkMDA2NmEtYjJkMC00YTYyLWFkMzQtYjM2NWI1YjBlYmRhIiwidCI6IjkwYWZmZTBmLWMyYTMtNDEwOC1iYjk4LTZjZWI0ZTk0ZWYxNSIsImMiOjEwfQ%3D%3D"
   }
 ];
 
