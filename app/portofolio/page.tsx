@@ -29,6 +29,14 @@ const projects = [
     category: "Power BI",
     mediumLink: "",
     appLink: "https://app.powerbi.com/view?r=eyJrIjoiZmVkMDA2NmEtYjJkMC00YTYyLWFkMzQtYjM2NWI1YjBlYmRhIiwidCI6IjkwYWZmZTBmLWMyYTMtNDEwOC1iYjk4LTZjZWI0ZTk0ZWYxNSIsImMiOjEwfQ%3D%3D"
+  },
+  {
+    id: 4,
+    title: "Customer Churn Modelling",
+    description: "A machine learning classification model built to predict customer churn and uncover key drivers of attrition.",
+    category: "Machine Learning",
+    mediumLink: "https://docs.google.com/presentation/d/1ls-6XcRMCnHZaBWsmR9SyNta0Jzmc7bb/edit?usp=sharing&ouid=100712162107441253312&rtpof=true&sd=true",
+    appLink: "https://colab.research.google.com/drive/1abu0Xz2DJFi6RE6H5DnoOyTXwC5_2IVB?usp=sharing"
   }
 ];
 
